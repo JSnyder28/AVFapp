@@ -18,6 +18,7 @@
  */
 package org.apache.cordova.file;
 
+import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
@@ -777,7 +778,7 @@ public class FileUtils extends CordovaPlugin {
 
         if (filePath.equals(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Android/data/" + cordova.getActivity().getPackageName() + "/cache") ||
                 filePath.equals(Environment.getExternalStorageDirectory().getAbsolutePath()) ||
-                filePath.equals("/data/data/" + cordova.getActivity().getPackageName())) {
+                filePath.equals(Environment.getExternalStorageDirectory().getPath() + cordova.getActivity().getPackageName())) {
             return true;
         }
         return false;
@@ -859,10 +860,12 @@ public class FileUtils extends CordovaPlugin {
                 fs.put("root", getEntry(Environment.getExternalStorageDirectory().getAbsolutePath() +
                         "/Android/data/" + cordova.getActivity().getPackageName() + "/cache/"));
             } else {
-                fp = new File("/data/data/" + cordova.getActivity().getPackageName() + "/cache/");
+                fp = new File(Environment.getExternalStorageDirectory().getAbsolutePath() +
+                		"/Android/Data/" + cordova.getActivity().getPackageName() + "/cache/");
                 // Create the cache dir if it doesn't exist.
                 fp.mkdirs();
-                fs.put("root", getEntry("/data/data/" + cordova.getActivity().getPackageName() + "/cache/"));
+                fs.put("root", getEntry(Environment.getExternalStorageDirectory().getAbsolutePath() +
+                		"/Android/Data/" + cordova.getActivity().getPackageName() + "/cache/"));
             }
         }
         else if (type == PERSISTENT) {
