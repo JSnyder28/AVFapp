@@ -19,8 +19,11 @@
 package org.apache.cordova.file;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import android.content.Context;
+>>>>>>> local
+=======
 >>>>>>> local
 import android.database.Cursor;
 import android.net.Uri;
@@ -887,7 +890,8 @@ public class FileUtils extends CordovaPlugin {
             if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
                 fs.put("root", getEntry(Environment.getExternalStorageDirectory()));
             } else {
-                fs.put("root", getEntry("/data/data/" + cordova.getActivity().getPackageName()));
+                fs.put("root", getEntry(Environment.getExternalStorageDirectory() + 
+                		cordova.getActivity().getPackageName()));
             }
         }
         else {

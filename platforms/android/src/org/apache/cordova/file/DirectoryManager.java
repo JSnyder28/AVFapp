@@ -85,10 +85,10 @@ public class DirectoryManager {
      * @param path to the file system
      * @return free space in KB
      */
-    private static long freeSpaceCalculation(String path) {
+    public static long freeSpaceCalculation(String path) {
         StatFs stat = new StatFs(path);
-        long blockSize = stat.getBlockSize();
-        long availableBlocks = stat.getAvailableBlocks();
+        long blockSize = stat.getBlockSizeLong();
+        long availableBlocks = stat.getAvailableBlocksLong();
         return availableBlocks * blockSize / 1024;
     }
 
