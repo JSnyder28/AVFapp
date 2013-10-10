@@ -1,0 +1,36 @@
+Contents of /Users/Josh/Developer/AVFapp/platforms/ios/demoApp/demoApp-Prefix.pch
+-x
+objective-c
+-arch
+i386
+-fretain-comments-from-system-headers
+-std=gnu99
+-fobjc-arc
+-fmodules
+-fmodules-cache-path=/Users/Josh/Developer/AVFapp/platforms/ios/DerivedData/ModuleCache
+-fpascal-strings
+-O0
+-DDEBUG=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+-fexceptions
+-fasm-blocks
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-mios-simulator-version-min=7.0
+-iquote
+-iquote
+-I/Users/Josh/Developer/AVFapp/platforms/ios/DerivedData/demoApp/Build/Products/Debug-iphonesimulator/include
+-I/Users/Josh/Developer/AVFapp/platforms/ios/DerivedData/demoApp/Build/Products/Debug-iphonesimulator/usr/local/lib/include
+-I/Users/Josh/Developer/AVFapp/platforms/ios/DerivedData/demoApp/Build/Intermediates/UninstalledProducts/include
+-I/Users/Josh/Developer/AVFapp/platforms/ios/DerivedData/demoApp/Build/Products/Debug-iphonesimulator
+-F/Users/Josh/Developer/AVFapp/platforms/ios/DerivedData/demoApp/Build/Products/Debug-iphonesimulator
+-ferror-limit=10
+-working-directory=/Users/Josh/Developer/AVFapp/platforms/ios
+-Xclang
+-detailed-preprocessing-record
+i386-apple-darwin12.5.0
+"4.2.1 Compatible Apple LLVM 5.0 (clang-500.2.76)"
+SDK_PRODUCT_BUILD_VERSION=11A465
+11A465

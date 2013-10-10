@@ -1,0 +1,24 @@
+/* Joshua Snyder
+ AVF 1310
+ Demo App
+ */
+
+body
+{
+    background-color: silver;
+}
+
+.Center
+{
+    text-align: center;
+}
+
+nav
+{
+    display: block;
+}
+
+.navbar
+{
+    display: inline;
+}
